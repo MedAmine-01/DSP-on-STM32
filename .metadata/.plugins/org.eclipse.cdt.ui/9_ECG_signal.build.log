@@ -1,0 +1,17 @@
+12:06:50 **** Incremental Build of configuration Debug for project 9_ECG_signal ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/9_ECG_signal/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "9_ECG_signal.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\9_ECG_signal\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_ECG_signal.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\9_ECG_signal\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_ECG_signal.elf
+ 
+arm-none-eabi-size  9_ECG_signal.elf 
+arm-none-eabi-objdump -h -S 9_ECG_signal.elf  > "9_ECG_signal.list"
+   text	   data	    bss	    dec	    hex	filename
+  21620	   3016	   7032	  31668	   7bb4	9_ECG_signal.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_ECG_signal.list
+ 
+
+12:06:51 Build Finished. 0 errors, 0 warnings. (took 453ms)
+

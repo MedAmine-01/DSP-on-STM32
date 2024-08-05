@@ -1,0 +1,8 @@
+../Src/main.c:52:5:main	6
+../Src/main.c:101:13:plot_input_signal	2
+../Src/main.c:109:13:pseudo_delay	2
+../Src/main.c:115:13:tim2_callback	2
+../Src/main.c:125:6:TIM2_IRQHandler	1
+../Src/main.c:132:6:clear_data_buffer	2
+../Src/main.c:138:16:read_fifo	2
+../Src/main.c:152:13:convolution	4

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;15_Background_Thread_for_data_aquisation/Inc/tim.c&apos; to &apos;tim.h&apos;" description="Rename resource &apos;tim.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/tim.c" name="tim.h" stamp="1722796850870" updateReferences="true"/>
+</session>

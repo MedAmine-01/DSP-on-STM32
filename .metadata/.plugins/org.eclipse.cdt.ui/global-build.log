@@ -1,0 +1,813 @@
+12:14:38 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15676	    456	   4312	  20444	   4fdc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:15:50 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15676	    456	   4312	  20444	   4fdc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:17:38 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:121:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  121 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:82:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   82 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16020	    456	   4312	  20788	   5134	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:19:48 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16020	    456	   4312	  20788	   5134	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:20:58 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:21:45 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:23:31 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:23:58 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:26:08 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:30:07 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16036	    456	   4312	  20804	   5144	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:31:22 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16036	    460	   4316	  20812	   514c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:34:47 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'read_fifo':
+../Src/main.c:123:33: warning: passing argument 1 of 'rx_fifo_put' makes integer from pointer without a cast [-Wint-conversion]
+  123 |         read_flag = rx_fifo_put(destination);
+      |                                 ^~~~~~~~~~~
+      |                                 |
+      |                                 rx_dataType * {aka long unsigned int *}
+In file included from ../Src/main.c:26:
+../Inc/fifo.h:22:33: note: expected 'rx_dataType' {aka 'long unsigned int'} but argument is of type 'rx_dataType *' {aka 'long unsigned int *'}
+   22 | uint8_t rx_fifo_put(rx_dataType data);
+      |                     ~~~~~~~~~~~~^~~~
+../Src/main.c: At top level:
+../Src/main.c:84:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   84 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16084	    460	   4316	  20860	   517c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:37:07 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16076	    460	   4316	  20852	   5174	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:47:29 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:83:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   83 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:49:01 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:50:12 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:51:06 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:51:59 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+12:59:41 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+12:59:49 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16148	    460	   4316	  20924	   51bc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+13:39:11 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+../Src/main.c: In function 'main':
+../Src/main.c:83:33: error: 'j' undeclared (first use in this function)
+   83 |                                 j++;
+      |                                 ^
+../Src/main.c:83:33: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:87:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   87 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                double
+      |                                         %f
+../Src/main.c: At top level:
+../Src/main.c:96:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   96 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+13:39:32 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:87:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   87 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                double
+      |                                         %f
+../Src/main.c: At top level:
+../Src/main.c:96:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   96 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  17476	    784	   5832	  24092	   5e1c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+13:45:50 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:97:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   97 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16404	    784	   5832	  23020	   59ec	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+13:53:42 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:97:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   97 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16404	    664	   5712	  22780	   58fc	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+13:57:45 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:97:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   97 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16404	    588	   5636	  22628	   5864	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+13:59:44 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16404	    588	   5636	  22628	   5864	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:00:41 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:98:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   98 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16452	    588	   5636	  22676	   5894	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:01:25 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:98:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   98 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16444	    588	   5636	  22668	   588c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:03:14 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:98:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   98 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16452	    588	   5636	  22676	   5894	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:03:28 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16452	    588	   5636	  22676	   5894	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+14:04:27 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:98:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   98 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16452	    588	   5636	  22676	   5894	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:05:59 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+../Src/main.c: In function 'main':
+../Src/main.c:88:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   88 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:98:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   98 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16452	    664	   5712	  22828	   592c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:08:16 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16452	    664	   5712	  22828	   592c	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:13:37 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:77:33: error: unknown type name 'uint32'; did you mean 'uint32_t'?
+   77 |                                 uint32 random=rand() % (30 + 1);
+      |                                 ^~~~~~
+      |                                 uint32_t
+../Src/main.c:77:47: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   77 |                                 uint32 random=rand() % (30 + 1);
+      |                                               ^~~~
+../Src/main.c:90:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   90 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:100:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  100 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:14:25 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:91:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   91 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:101:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  101 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16712	    664	   5712	  23088	   5a30	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:15:14 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:40:10: error: 'random' redeclared as different kind of symbol
+   40 | uint32_t random;
+      |          ^~~~~~
+In file included from ../Src/main.c:28:
+C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/stdlib.h:258:9: note: previous declaration of 'random' with type 'long int(void)'
+  258 | long    random (void);
+      |         ^~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:91:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   91 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:101:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  101 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:43: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:15:50 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:91:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   91 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:101:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  101 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    664	   5720	  23112	   5a48	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:16:56 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:91:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   91 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:101:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  101 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    664	   5720	  23112	   5a48	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:23:54 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    664	   5720	  23112	   5a48	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:25:06 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    664	   5720	  23112	   5a48	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:30:57 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+../Src/main.c: In function 'main':
+../Src/main.c:91:42: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   91 |                                 printf("%d,",filtered_signal[i]);
+      |                                         ~^   ~~~~~~~~~~~~~~~~~~
+      |                                          |                  |
+      |                                          int                uint32_t {aka long unsigned int}
+      |                                         %ld
+../Src/main.c: At top level:
+../Src/main.c:101:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+  101 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    924	   5980	  23632	   5c50	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 
+14:31:11 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16728	    924	   5980	  23632	   5c50	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+14:34:05 **** Incremental Build of configuration Debug for project 15_Background_Thread_for_data_aquisation ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/signals.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/15_Background_Thread_for_data_aquisation/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/signals.d" -MT"Src/signals.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/signals.o"
+arm-none-eabi-gcc -o "15_Background_Thread_for_data_aquisation.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_Background_Thread_for_data_aquisation.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\15_Background_Thread_for_data_aquisation\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_Background_Thread_for_data_aquisation.elf
+ 
+arm-none-eabi-size  15_Background_Thread_for_data_aquisation.elf 
+arm-none-eabi-objdump -h -S 15_Background_Thread_for_data_aquisation.elf  > "15_Background_Thread_for_data_aquisation.list"
+   text	   data	    bss	    dec	    hex	filename
+  16728	    924	   5980	  23632	   5c50	15_Background_Thread_for_data_aquisation.elf
+Finished building: default.size.stdout
+ 
+Finished building: 15_Background_Thread_for_data_aquisation.list
+ 

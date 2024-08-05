@@ -1,0 +1,10 @@
+06:01:50 **** Incremental Build of configuration Debug for project 7_convolution ****
+make -j16 all 
+arm-none-eabi-size  7_convolution.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17100	   1852	   5996	  24948	   6174	7_convolution.elf
+Finished building: default.size.stdout
+ 
+
+06:01:50 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

@@ -1,0 +1,5 @@
+../Src/main.c:40:5:main	16	static
+../Src/main.c:66:13:plot_input_signal	16	static
+../Src/main.c:74:13:pseudo_delay	16	static
+../Src/main.c:80:13:tim2_callback	4	static
+../Src/main.c:84:6:TIM2_IRQHandler	8	static

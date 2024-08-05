@@ -1,0 +1,9 @@
+sensor_value
+rx_data
+timer
+data_chunck
+fifo_full_flag
+RX_FIFO
+data
+filtered_signal
+randomn

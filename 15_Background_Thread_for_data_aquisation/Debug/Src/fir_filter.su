@@ -1,0 +1,2 @@
+../Src/fir_filter.c:12:6:FIR_filter_init	32	static
+../Src/fir_filter.c:36:11:FIR_filter_update	24	static

@@ -1,0 +1,10 @@
+08:13:44 **** Incremental Build of configuration Debug for project 2_UART_Driver ****
+make -j16 all 
+arm-none-eabi-size  2_UART_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15360	   1660	   1900	  18920	   49e8	2_UART_Driver.elf
+Finished building: default.size.stdout
+ 
+
+08:13:45 Build Finished. 0 errors, 0 warnings. (took 391ms)
+

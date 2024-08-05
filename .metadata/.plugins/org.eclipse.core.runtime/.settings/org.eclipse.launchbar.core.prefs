@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:11_movingAverageFilter Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:12_ADC_Driver Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_FIFO_DataStructure Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:6_signal_stdDev_CMSIS-DSP Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:9_ECG_signal Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:7_convolution Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_DFT_Algorithm Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_Testting_CMSIS-DSP_float32 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:5_signal_mean_and_variance,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plotting_signal_with_LogicAnalyzer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:uart_test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_UART_Driver Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_test Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_FIR_Design Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:15_Background_Thread_for_data_aquisation
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_test\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:0_test\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:1_Plotting_signal_with_LogicAnalyzer/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_UART_Driver\ Debug/activeLaunchMode=debug

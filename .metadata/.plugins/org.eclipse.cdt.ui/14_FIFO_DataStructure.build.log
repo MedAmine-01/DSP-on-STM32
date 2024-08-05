@@ -1,0 +1,20 @@
+08:10:33 **** Incremental Build of configuration Debug for project 14_FIFO_DataStructure ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_CM4 -D_FPU_PRESENT -DSTM32F401xE -DNUCLEO_F401RE -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/0_test/chip_headers/CMSIS/Include" -I"C:/Users/user/Desktop/f401re documents/DSP/14_FIFO_DataStructure/chip_headers/CMSIS/DSP/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:66:13: warning: 'plot_input_signal' defined but not used [-Wunused-function]
+   66 | static void plot_input_signal(void){
+      |             ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "14_FIFO_DataStructure.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"C:\Users\user\Desktop\f401re documents\DSP\14_FIFO_DataStructure\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_FIFO_DataStructure.map" -Wl,--gc-sections -static -L"C:\Users\user\Desktop\f401re documents\DSP\14_FIFO_DataStructure\chip_headers\CMSIS\Lib\GCC" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_FIFO_DataStructure.elf
+ 
+arm-none-eabi-size  14_FIFO_DataStructure.elf 
+arm-none-eabi-objdump -h -S 14_FIFO_DataStructure.elf  > "14_FIFO_DataStructure.list"
+   text	   data	    bss	    dec	    hex	filename
+  15760	    456	   3312	  19528	   4c48	14_FIFO_DataStructure.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_FIFO_DataStructure.list
+ 
+
+08:10:33 Build Finished. 0 errors, 1 warnings. (took 500ms)
+
